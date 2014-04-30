@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Button</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    </head>
+    <body>
+		<p id="foo">one more line</p>
+		<p id="l1">another line</p>
+		<p id="l1">and another</p>
+		<p id="l2">two buttons so far</p>
+		<p id="l3">ehhh</p>
+		<p id="l4">baibai</p>
+
+		<input type="button" onclick="changeText()" value="don't click me" />
+		<input type="button" onclick="link1()" value="click me instead!" />
+		<input type="button" onclick="link2()" value="hi" />		
+		<input type="button" onclick="link3()" value="hi again" />
+		<input type="button" onclick="link4()" value="cya" />	
+	
+		<script type="text/javascript">
+			function changeText() {
+				alert("you clicked me nooo");
+				//$("p").addClass("foo");
+				$("#foo").html("shaaaame...");
+				$("#foo").fadeOut();
+			}
+			function link1() {
+				$("#l1").html("oops, wrong one...");
+				$("#l1").fadeOut();
+			}
+			
+			function link2(){
+				$("#l2").html("hhahahahahahah");
+				$("#l2").fadeOut();
+			}
+
+			function link3(){
+				$("#l3").html("press");
+			}
+			
+			function link4(){
+				$("l4").html("cyaaaaa")
+				$("l4").fadeOut();
+			}
+		</script>
+
+
+    </body>
+</html>
+
+
