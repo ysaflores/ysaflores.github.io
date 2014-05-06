@@ -1,0 +1,37 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Dosis:500,700);
+
+#title{
+        font-family:"Lobster";
+        font-size:300%;
+        color: #B39EB5;
+        text-align: center;
+}
+
+body{
+        font-family:"Dosis";
+        background-image:url("https://d37wxxhohlp07s.cloudfront.net/s3_images/785375/Blank%20notepad%20-%20large%20grid.png?1346339197");
+        background-repeat:repeat;
+        margin: 2em;
+}
+
+img.center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+#sparkle{
+        color:#7C648B
+}
+
+#ilike{
+        color:#424242;
+}
+
+#pastel{
+        color:#EDADBC;
+}
+
+#mint{
+        color:#43E6C8;
