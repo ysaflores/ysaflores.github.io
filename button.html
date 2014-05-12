@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Button</title>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" > </script>
 
     </head>
     <body>
@@ -13,14 +13,16 @@
 		<p id="l1">and another</p>
 		<p id="l2">two buttons so far</p>
 		<p id="l3">ehhh</p>
-		<p id="l4">baibai</p>
+		<p id="l4">bye</p>
+		<p id="l5">hi</p>
 
 		<input type="button" onclick="changeText()" value="don't click me" />
 		<input type="button" onclick="link1()" value="click me instead!" />
 		<input type="button" onclick="link2()" value="hi" />		
 		<input type="button" onclick="link3()" value="hi again" />
-		<input type="button" onclick="link4()" value="cya" />	
-	
+		<input type="button" onclick="link4()" value="cya" />			
+		<input type="button" onclick="link5()" value="hi" />
+
 		<script type="text/javascript">
 			function changeText() {
 				alert("you clicked me nooo");
@@ -33,19 +35,25 @@
 				$("#l1").fadeOut();
 			}
 			
-			function link2(){
+			function link2() {
 				$("#l2").html("hhahahahahahah");
 				$("#l2").fadeOut();
 			}
 
-			function link3(){
+			function link3() { 
 				$("#l3").html("press");
 			}
 			
-			function link4(){
-				$("l4").html("cyaaaaa")
-				$("l4").fadeOut();
+			function link4() {
+				$("#l4").html("cyaaaaa");
+				$("#l4").fadeOut();
 			}
+
+			function link4() {
+				$("#l4").html("hi");
+				$("l4").fadeIn();
+			}
+
 		</script>
 
 
