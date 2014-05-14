@@ -2,22 +2,18 @@
 @import url(http://fonts.googleapis.com/css?family=Dosis:500,700);
 
 #title{
-<<<<<<< HEAD
    	font-family:"Lobster";
 	font-size:300%;
 	color: #B39EB5;
    	text-align: center;
-=======
         font-family:"Lobster";
         font-size:300%;
         color: #B39EB5;
         text-align: center;
->>>>>>> 35e5200700cf67d2616190c998198f8a8a1b72ad
 }
 
 body{
         font-family:"Dosis";
-<<<<<<< HEAD
 	background-image:url("https://d37wxxhohlp07s.cloudfront.net/s3_images/785375/Blank%20notepad%20-%20large%20grid.png?1346339197");
 	background-repeat:repeat;
 	margin: 2em;
@@ -27,7 +23,6 @@ img.center {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-=======
         background-image:url("https://d37wxxhohlp07s.cloudfront.net/s3_images/785375/Blank%20notepad%20-%20large%20grid.png?1346339197");
         background-repeat:repeat;
         margin: 2em;
@@ -37,7 +32,6 @@ img.center {
         display: block;
         margin-left: auto;
         margin-right: auto;
->>>>>>> 35e5200700cf67d2616190c998198f8a8a1b72ad
 }
 
 #sparkle{
@@ -54,7 +48,6 @@ img.center {
 
 #mint{
         color:#43E6C8;
-<<<<<<< HEAD
 }
 
 .myButton {
@@ -96,6 +89,3 @@ img.center {
 	position:relative;
 	top:1px;
 }
-
-=======
->>>>>>> 35e5200700cf67d2616190c998198f8a8a1b72ad
