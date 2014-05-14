@@ -1,0 +1,17 @@
+@import url(http://fonts.googleapis.com/css?family=Luckiest+Guy);
+@import url(http://fonts.googleapis.com/css?family=Patrick+Hand);
+
+#title{
+        font-family:"Luckiest Guy";
+        font-size:300%;
+        color: #B39EB5;
+        text-align: center;
+}
+
+body{
+        font-family:"Patrick Hand";
+        background-image:url("http://www.redfm.ie/wp-content/uploads/2013/06/2596-sunshine-1920x1080-nature-wallpaper.jpg");
+        background-repeat:repeat;
+        margin: 2em;
+        text-align: center;
+}
