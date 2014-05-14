@@ -1,0 +1,79 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Dosis:500,700);
+
+#title{
+   	font-family:"Lobster";
+	font-size:300%;
+	color: #B39EB5;
+   	text-align: center;
+}
+
+body{
+        font-family:"Dosis";
+	background-image:url("https://d37wxxhohlp07s.cloudfront.net/s3_images/785375/Blank%20notepad%20-%20large%20grid.png?1346339197");
+	background-repeat:repeat;
+	margin: 2em;
+}
+
+img.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#sparkle{
+        color:#7C648B
+}
+
+#ilike{
+        color:#424242;
+}
+
+#pastel{
+        color:#EDADBC;
+}
+
+#mint{
+        color:#43E6C8;
+}
+
+.myButton {
+	-moz-box-shadow:inset -1px 0px 20px -1px #dcecfb;
+	-webkit-box-shadow:inset -1px 0px 20px -1px #dcecfb;
+	box-shadow:inset -1px 0px 20px -1px #dcecfb;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #deebf7), color-stop(1, #a8d5ed));
+	background:-moz-linear-gradient(top, #deebf7 5%, #a8d5ed 100%);
+	background:-webkit-linear-gradient(top, #deebf7 5%, #a8d5ed 100%);
+	background:-o-linear-gradient(top, #deebf7 5%, #a8d5ed 100%);
+	background:-ms-linear-gradient(top, #deebf7 5%, #a8d5ed 100%);
+	background:linear-gradient(to bottom, #deebf7 5%, #a8d5ed 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#deebf7', endColorstr='#a8d5ed',GradientType=0);
+	background-color:#deebf7;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	border:3px solid #d9e6f2;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Courier New;
+	font-size:18px;
+	padding:4px 9px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #285d91;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #a8d5ed), color-stop(1, #deebf7));
+	background:-moz-linear-gradient(top, #a8d5ed 5%, #deebf7 100%);
+	background:-webkit-linear-gradient(top, #a8d5ed 5%, #deebf7 100%);
+	background:-o-linear-gradient(top, #a8d5ed 5%, #deebf7 100%);
+	background:-ms-linear-gradient(top, #a8d5ed 5%, #deebf7 100%);
+	background:linear-gradient(to bottom, #a8d5ed 5%, #deebf7 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a8d5ed', endColorstr='#deebf7',GradientType=0);
+	background-color:#a8d5ed;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
