@@ -12,45 +12,45 @@
     <script type="text/processing" data-processing-target="targetcanvas">
       
      void setup() {
-      size(400,400);
-      strokeWeight(1);
-      ellipse(200, 200, 400, 400);
-      }      
+     size(400,400);
+     strokeWeight(1);
+     ellipse(200, 200, 400, 400);
+     }      
 
-	var inside = 0;
-	var total = 1;
+     var inside = 0;
+     var total = 1;
 
-      var draw() {
-	strokeWeight(5);
-	var x = random(0, 400);
-          var y = random(0,400);
-          var d = dist(x, y, 200, 200);
+     var draw() {
+     strokeWeight(5);
+     var x = random(0, 400);
+     var y = random(0,400);
+     var d = dist(x, y, 200, 200);
       
-           if (d >= 200) {
-           stroke(250, 3, 3);
-           point(x, y); 
-          } else {
-           stroke(57, 173, 57);
-           point(x, y);
-           ++inside;
-          }
-          ++total;
+     if (d >= 200) {
+     stroke(250, 3, 3);
+     point(x, y); 
+     } else {
+     stroke(57, 173, 57);
+     point(x, y);
+     ++inside;
+     }
+     ++total;
       
       
-        //text("Inside Circle: " + inside, 91, 385);
-        //text("Total dots: " + total, 5, 385);
+     //text("Inside Circle: " + inside, 91, 385);
+     //text("Total dots: " + total, 5, 385);
 
-	// Draw empty rectangle
-	noStroke()
-	fill(255,255,255);
-	rectMode(CENTER);
-	rect(200, 200, 100, 50);
+     // Draw empty rectangle
+     noStroke()
+     fill(255,255,255);
+     rectMode(CENTER);
+     rect(200, 200, 100, 50);
 
-	// Show current value of pi
-	fill(0,0,0);
-	textAlign(CENTER);
-	pi = inside / total * 4.0;
-        text("Pi: " + nf(pi, 1, 5), width / 2, height / 2);
+     // Show current value of pi
+     fill(0,0,0);
+     textAlign(CENTER);
+     pi = inside / total * 4.0;
+     text("Pi: " + nf(pi, 1, 5), width / 2, height / 2);
 };
 
     </script>    
