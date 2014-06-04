@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css"
+        href="style.css">
+        <title>Ysabelle Pi</title>
+    	<script data-require="processing.js@*" data-semver="1.4.1" src="//cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.1/processing.min.js"></script>
+    </head>
+
+    <script type="text/processing" data-processing-target="targetcanvas">
+      
+     void setup() {
+      size(400,400);
+      strokeWeight(1);
+      ellipse(200, 200, 385, 385);
+      }      
+
+      var draw() {
+          strokeWeight(2);
+          var x = random(10,385);
+          var y = random(10,385);
+          var d = dist(x, y, 250, 250);
+      
+           if (d >= 200) {
+           color(250, 3, 3);
+           point(x, y); 
+           ++inside;
+           ++total;
+          } 
+
+           else {
+           color(57, 173, 57);
+           point(x, y);
+           ++total
+        
+          }
+      
+      
+        text("Inside Circle: " + inside, 91, 385);
+        text("Total dots: " + total, 5, 385);
+        text("Pi: " + inside/total*4, 240, 385);
+};
+
+    </script>    
+  </head>
+
+  <body>
+    <canvas id="targetcanvas" width="400" height="400"></canvas>
+  </body>
+</html>
+
