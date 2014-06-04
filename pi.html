@@ -14,36 +14,43 @@
      void setup() {
       size(400,400);
       strokeWeight(1);
-      ellipse(200, 200, 385, 385);
+      ellipse(200, 200, 400, 400);
       }      
 
 	var inside = 0;
 	var total = 1;
 
       var draw() {
-          strokeWeight(2);
-          var x = random(10,385);
-          var y = random(10,385);
-          var d = dist(x, y, 250, 250);
+	strokeWeight(5);
+	var x = random(0, 400);
+          var y = random(0,400);
+          var d = dist(x, y, 200, 200);
       
            if (d >= 200) {
-           color(250, 3, 3);
+           stroke(250, 3, 3);
            point(x, y); 
-           ++inside;
-           ++total;
-          } 
-
-           else {
-           color(57, 173, 57);
+          } else {
+           stroke(57, 173, 57);
            point(x, y);
-           ++total
-        
+           ++inside;
           }
+          ++total;
       
       
-        text("Inside Circle: " + inside, 91, 385);
-        text("Total dots: " + total, 5, 385);
-        text("Pi: " + inside/total*4, 240, 385);
+        //text("Inside Circle: " + inside, 91, 385);
+        //text("Total dots: " + total, 5, 385);
+
+	// Draw empty rectangle
+	noStroke()
+	fill(255,255,255);
+	rectMode(CENTER);
+	rect(200, 200, 100, 50);
+
+	// Show current value of pi
+	fill(0,0,0);
+	textAlign(CENTER);
+	pi = inside / total * 4.0;
+        text("Pi: " + nf(pi, 1, 5), width / 2, height / 2);
 };
 
     </script>    
